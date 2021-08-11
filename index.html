@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <!-- Get insights that help your business grow.
+
+  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.
+
+  10k+ companies
+  314 templates
+  12m+ queries -->
+  <div class="container">
+      <div class="flex-container">
+        <div id="information">
+          <div id="information-content">
+            <h1 id="main-title">Get <a id="title-highlight">insights</a> that help your business grow.</h1>
+            <p id="main-content">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+            experience, and overall efficiency.</p>
+            <div id="number" class="grid-container">
+            <div class="grid-content">
+              <h1 class="grid-item title">10k+</h1>
+              <p class="grid-item stat">Companies</p>
+            </div>
+            <div class="grid-content">
+              <h1 class="grid-item title">314</h1>
+              <p class="grid-item stat">Templates</p>
+            </div>
+            <div class="grid-content">
+              <h1 class="grid-item title">12M+</h1>
+              <p class="grid-item stat">Queries</p>
+            </div>
+            </div>
+          </div>
+        </div>
+          <img src="./images/image-header-desktop.jpg" id="photo">
+      </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/rivaldyava01">Rivaldy Avianto</a>.
+  </div> 
+</body>
+</html>
+
+<style>
+  body{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px
+  }
+  .container{
+    margin-left: 250px;
+    margin-top: 100px;
+  }
+  .flex-container {
+  display: flex;
+  background-color: #2196F3;
+  max-width: 800px;
+  max-height: 400px;
+ 
+}
+
+.flex-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  min-width: 400px;
+}
+
+#photo{
+  display: flex;
+  max-width: 400px;
+  filter: sepia(100%) hue-rotate(277deg);
+}
+
+#information-content{
+ width: 300px;
+ margin-left: 30px;
+ text-align: left;
+  
+}
+
+#information{
+  background-color: hsl(244, 38%, 16%)
+}
+
+#main-title{
+  color: hsl(0, 0%, 100%)
+}
+
+#main-content{
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  margin-top: 70px;
+}
+
+.grid-item {
+  margin-top: 0;
+  margin-bottom: 2px;
+  text-align: left;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.title{
+  color: hsla(0, 0%, 100%,0.6);
+}
+
+#title-highlight{
+  color: hsl(277, 64%, 61%);
+}
+
+@media screen and (max-width: 1010px){
+  .flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+
+  }
+  .grid-container{
+    grid-template-columns: auto;
+  }
+  body{
+    font-size: 15px;
+  }
+  #photo{
+
+  min-width: 400px;
+  max-height: 250px;
+  }
+  .container{
+    margin: auto;
+    margin-top: 500px;
+  }
+
+  #information-content{
+  text-align: center; 
+  margin: auto;
+  }
+
+  .grid-item {
+    text-align: center;
+  }
+  .grid-content{
+    margin-bottom: 30px;
+
+  }
+  #main-title{
+    max-width: 250px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+
+  }
+  #main-content{
+    margin-top: 50px;
+    max-width: 250px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+  }
+
+}
+
+.attribution{ 
+  font-size: 11px; text-align: center; color: aliceblue; 
+}
+.attribution a{ 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+</style>
