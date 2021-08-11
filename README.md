@@ -24,8 +24,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/rivaldyava01/Frontend-Mentor-Stats-Preview)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/rivaldyava01/Frontend-Mentor-Stats-Preview)
+- Live Site URL: [Github Page](https://rivaldyava01.github.io/Frontend-Mentor-Stats-Preview/)
 
 ## My process
 
